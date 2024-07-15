@@ -1,6 +1,27 @@
-// First line of JS in a JS file
-console.log("Hello World!");
+// Person Object which holds details about a person
 
-let firstName = "Suryansh";
-let lastName = "Jain";
-console.log("My name is: " + firstName + " " + lastName);
+let person = {
+  firstName: "Suryansh",
+  lastName: "Jain",
+  age: 24,
+  email: "myEmail@email.com",
+};
+
+console.log(person);
+// Accessing the object's properties using dot notation
+console.log(
+  "My name is: " +
+    person.firstName +
+    " " +
+    person.lastName +
+    ", and I am " +
+    person.age +
+    " years old!" +
+    " You can contact me at my email: " +
+    person.email +
+    "."
+);
+
+const fNameProperty = "firstName";
+console.log(person.firstName);
+console.log(person[fNameProperty]);
