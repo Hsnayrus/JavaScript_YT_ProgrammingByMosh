@@ -19,4 +19,4 @@ const myPattern = /(?<amount>[0-9]+)/;
 console.log(anotherString.match(myPattern).groups.amount);
 
 // Try to change the 4th character of a string. Were you able to do it?
-myStr[3] = "4";
+myStr[3] = "4"; // Does not work
